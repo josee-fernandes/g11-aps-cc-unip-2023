@@ -1,0 +1,66 @@
+/* home.css */
+
+main.container .content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 100%;
+}
+
+/* Conteúdo principal */
+.content h1,
+.content__second h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.content p,
+.content__second p {
+  font-size: 0.875rem;
+  text-align: justify;
+}
+
+.content__second img {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+/* Fonte da informação */
+.source {
+  margin-block: 1rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+}
+
+.source p a {
+  text-decoration: underline;
+  color: white;
+  transition: opacity 150ms ease;
+}
+
+.source p a:hover {
+  color: yellow;
+}
+
+@media screen and (min-width: 768px) {
+  .content__first h1,
+  .content__second h1 {
+    font-size: 2rem;
+  }
+
+  .content__first p,
+  .content__second p {
+    font-size: 1rem;
+  }
+
+  .source {
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main.container .content {
+    flex-direction: row;
+    gap: 5rem;
+  }
+}
